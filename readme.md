@@ -38,10 +38,13 @@ cyber-slack mcp   # Start the MCP server
 
 ### Tools
 
-| Tool | Description |
-| --- | --- |
-| `slack_post_message` | Post a message to a Slack channel |
-| `slack_list_channels` | List public channels in the workspace |
+| Tool | Description | Token |
+| --- | --- | --- |
+| `slack_post_message` | Post a message to a Slack channel | Bot |
+| `slack_list_channels` | List public channels in the workspace | Bot |
+| `slack_search_messages` | Search for messages (supports Slack search modifiers) | User |
+
+**Note:** `slack_search_messages` requires a user token (`xoxp-`) with `search:read` scope. Bot tokens cannot use the search API.
 
 ### Configuration
 

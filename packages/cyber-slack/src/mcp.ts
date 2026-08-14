@@ -58,6 +58,69 @@ export async function runMcpServer(): Promise<void> {
 		},
 	)
 
+	server.tool(
+		'slack_search_messages',
+		'Search for messages in Slack. Requires a user token (xoxp-) with search:read scope, not a bot token.',
+		{
+			query: z
+				.string()
+				.describe('Search query (supports Slack search modifiers like from:, in:, has:, before:, after:)'),
+			count: z.number().optional().describe('Number of results per page (default 20, max 100)'),
+			sort: z
+				.enum(['score', 'timestamp'])
+				.optional()
+				.describe('Sort order: score (relevance) or timestamp (default: score)'),
+			sort_dir: z.enum(['asc', 'desc']).optional().describe('Sort direction (default: desc)'),
+		},
+		async ({ query, count, sort, sort_dir }) => {
+			if (!SLACK_BOT_TOKEN) {
+				return {
+					content: [{ type: 'text', text: 'Error: SLACK_BOT_TOKEN is not set' }],
+					isError: true,
+				}
+			}
+			const client = createSlackClient({ token: SLACK_BOT_TOKEN })
+			try {
+				const result = await client.search.messages({
+					query,
+					count: count ?? 20,
+					sort: sort ?? 'score',
+					sort_dir: sort_dir ?? 'desc',
+				})
+				const messages =
+					result.messages?.matches?.map((m) => ({
+						channel: m.channel?.name,
+						user: m.user,
+						text: m.text,
+						ts: m.ts,
+						permalink: m.permalink,
+					})) ?? []
+				return {
+					content: [
+						{
+							type: 'text',
+							text: JSON.stringify({ total: result.messages?.total ?? 0, messages }, null, 2),
+						},
+					],
+				}
+			} catch (error) {
+				const message = error instanceof Error ? error.message : String(error)
+				if (message.includes('missing_scope') || message.includes('not_allowed_token_type')) {
+					return {
+						content: [
+							{
+								type: 'text',
+								text: 'Error: search.messages requires a user token (xoxp-) with search:read scope. Bot tokens cannot use this endpoint.',
+							},
+						],
+						isError: true,
+					}
+				}
+				throw error
+			}
+		},
+	)
+
 	const transport = new StdioServerTransport()
 	await server.connect(transport)
 }
