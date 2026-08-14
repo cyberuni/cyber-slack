@@ -3,7 +3,7 @@ import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 import { z } from 'zod'
 import { createSlackClient } from './client.js'
 
-const SLACK_BOT_TOKEN = process.env.SLACK_BOT_TOKEN
+const SLACK_TOKEN = process.env.SLACK_TOKEN ?? process.env.SLACK_BOT_TOKEN
 
 export async function runMcpServer(): Promise<void> {
 	const server = new McpServer({
@@ -19,13 +19,13 @@ export async function runMcpServer(): Promise<void> {
 			text: z.string().describe('Message text'),
 		},
 		async ({ channel, text }) => {
-			if (!SLACK_BOT_TOKEN) {
+			if (!SLACK_TOKEN) {
 				return {
-					content: [{ type: 'text', text: 'Error: SLACK_BOT_TOKEN is not set' }],
+					content: [{ type: 'text', text: 'Error: SLACK_TOKEN or SLACK_BOT_TOKEN is not set' }],
 					isError: true,
 				}
 			}
-			const client = createSlackClient({ token: SLACK_BOT_TOKEN })
+			const client = createSlackClient({ token: SLACK_TOKEN })
 			const result = await client.chat.postMessage({ channel, text })
 			return {
 				content: [{ type: 'text', text: `Message posted: ${result.ts}` }],
@@ -40,13 +40,13 @@ export async function runMcpServer(): Promise<void> {
 			limit: z.number().optional().describe('Maximum number of channels to return (default 100)'),
 		},
 		async ({ limit }) => {
-			if (!SLACK_BOT_TOKEN) {
+			if (!SLACK_TOKEN) {
 				return {
-					content: [{ type: 'text', text: 'Error: SLACK_BOT_TOKEN is not set' }],
+					content: [{ type: 'text', text: 'Error: SLACK_TOKEN or SLACK_BOT_TOKEN is not set' }],
 					isError: true,
 				}
 			}
-			const client = createSlackClient({ token: SLACK_BOT_TOKEN })
+			const client = createSlackClient({ token: SLACK_TOKEN })
 			const result = await client.conversations.list({
 				types: 'public_channel',
 				limit: limit ?? 100,
@@ -73,13 +73,13 @@ export async function runMcpServer(): Promise<void> {
 			sort_dir: z.enum(['asc', 'desc']).optional().describe('Sort direction (default: desc)'),
 		},
 		async ({ query, count, sort, sort_dir }) => {
-			if (!SLACK_BOT_TOKEN) {
+			if (!SLACK_TOKEN) {
 				return {
-					content: [{ type: 'text', text: 'Error: SLACK_BOT_TOKEN is not set' }],
+					content: [{ type: 'text', text: 'Error: SLACK_TOKEN or SLACK_BOT_TOKEN is not set' }],
 					isError: true,
 				}
 			}
-			const client = createSlackClient({ token: SLACK_BOT_TOKEN })
+			const client = createSlackClient({ token: SLACK_TOKEN })
 			try {
 				const result = await client.search.messages({
 					query,

@@ -12,11 +12,17 @@ pnpm add -g cyber-slack
 
 ## Setup
 
-Set the `SLACK_BOT_TOKEN` environment variable with your Slack Bot User OAuth Token (starts with `xoxb-`).
+Set `SLACK_TOKEN` (user token) or `SLACK_BOT_TOKEN` (bot token):
 
 ```sh
+# User token (xoxp-) - full access including search
+export SLACK_TOKEN=xoxp-your-token-here
+
+# Or bot token (xoxb-) - limited access, no search
 export SLACK_BOT_TOKEN=xoxb-your-token-here
 ```
+
+If both are set, `SLACK_TOKEN` takes precedence.
 
 ### Creating a Slack App
 
@@ -59,7 +65,7 @@ Add to your MCP configuration:
       "command": "npx",
       "args": ["cyber-slack", "mcp"],
       "env": {
-        "SLACK_BOT_TOKEN": "${SLACK_BOT_TOKEN}"
+        "SLACK_TOKEN": "${SLACK_TOKEN}"
       }
     }
   }
@@ -75,7 +81,7 @@ Or if installed globally:
       "command": "cyber-slack",
       "args": ["mcp"],
       "env": {
-        "SLACK_BOT_TOKEN": "${SLACK_BOT_TOKEN}"
+        "SLACK_TOKEN": "${SLACK_TOKEN}"
       }
     }
   }
