@@ -1,9 +1,17 @@
 import { WebClient } from '@slack/web-api'
+import { requireToken } from './env.js'
 
-export interface SlackClientOptions {
-	token: string
+let clientInstance: WebClient | undefined
+
+export function createSlackClient(token?: string | undefined): WebClient {
+	return new WebClient(token ?? requireToken())
 }
 
-export function createSlackClient(options: SlackClientOptions): WebClient {
-	return new WebClient(options.token)
+export function getClient(): WebClient {
+	clientInstance ??= createSlackClient()
+	return clientInstance
+}
+
+export function resetClient(): void {
+	clientInstance = undefined
 }
