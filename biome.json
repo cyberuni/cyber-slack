@@ -1,0 +1,24 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.5.8/schema.json",
+	"extends": ["@repobuddy/biome/recommended"],
+	"files": {
+		"includes": ["!**/dist", "!**/node_modules", "!**/.turbo", "!.agents"]
+	},
+	"overrides": [
+		{
+			"includes": ["packages/cyber-slack/src/**/*.ts"],
+			"linter": {
+				"rules": {
+					"suspicious": {
+						"noConsole": {
+							"level": "error",
+							"options": {
+								"allow": ["log", "info", "warn", "error"]
+							}
+						}
+					}
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,56 @@
+{
+	"name": "cyber-slack",
+	"version": "0.1.0",
+	"description": "Slack CLI and MCP server for AI agents",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/cyberuni/cyber-slack.git"
+	},
+	"author": "unional <homawong@gmail.com>",
+	"license": "MIT",
+	"files": [
+		"dist",
+		"!dist/**/*.test.*",
+		"!dist/**/*.system.*"
+	],
+	"type": "module",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		},
+		"./mcp": {
+			"import": "./dist/mcp.js",
+			"types": "./dist/mcp.d.ts"
+		}
+	},
+	"bin": {
+		"cyber-slack": "./dist/cli.js"
+	},
+	"scripts": {
+		"build": "tsdown",
+		"cyber-slack": "tsx src/cli.ts",
+		"dev": "tsx src/cli.ts",
+		"format": "biome format --write .",
+		"test": "vitest run src",
+		"test:system": "vitest run --config vitest.system.config.ts",
+		"test:watch": "vitest",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.30.0",
+		"@slack/web-api": "^7.10.0",
+		"commander": "^14.0.0",
+		"zod": "^4.4.3"
+	},
+	"devDependencies": {
+		"@types/node": "^25.9.1",
+		"tsdown": "^0.22.14",
+		"tsx": "^4.23.8",
+		"typescript": "^6.0.3",
+		"vitest": "^4.1.10"
+	},
+	"engines": {
+		"node": ">=22"
+	}
+}
