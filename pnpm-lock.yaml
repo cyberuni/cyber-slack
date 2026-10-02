@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.5.7
-        version: 2.5.8
+        version: 2.5.15
       '@changesets/cli':
         specifier: ^3.0.0
         version: 3.0.0
@@ -22,7 +22,7 @@ importers:
         version: 21.2.2
       '@repobuddy/biome':
         specifier: ^2.3.1
-        version: 2.3.1(@biomejs/biome@2.5.8)
+        version: 2.3.1(@biomejs/biome@2.5.15)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -74,59 +74,59 @@ packages:
     resolution: {integrity: sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg==}
     engines: {node: '>=6.9.0'}
 
-  '@biomejs/biome@2.5.8':
-    resolution: {integrity: sha512-aeAeeJB9fSDc7Gq+2GqpQxA0qBj6gj1k2R6L1cYqGePKP/baIq1WX8y6B+D+nRsO5ViQL22K/8IwbqERW0q1nw==}
+  '@biomejs/biome@2.5.15':
+    resolution: {integrity: sha512-WZTW4slm/pdkh92K6t/3aEN++44JD1PQ7squ7RCMLI1flHGl43DVOIGXvCjHiZgBMO1V4uYxoFNtqrIA4qGuIQ==}
     engines: {node: '>=14.21.3'}
     hasBin: true
 
-  '@biomejs/cli-darwin-arm64@2.5.8':
-    resolution: {integrity: sha512-mk1QON9PHllvvLN5gU3f4rMxeh4syK5p9OvKyWH6/W8ueh04uaC8TUXXByhGufWf/y5mQc03ZLM45zU+cmqMjA==}
+  '@biomejs/cli-darwin-arm64@2.5.15':
+    resolution: {integrity: sha512-BZVzFhJ/mUvTLMYbc9x6el0o2Uv5zP7bACYyhFb6fSc1giroXm7PL0a5KqMJ9F+/BnkYRjagD/ROSDVOZ6eapg==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [darwin]
 
-  '@biomejs/cli-darwin-x64@2.5.8':
-    resolution: {integrity: sha512-bsGwFMBNyHPyiLSsQcZJxdoRrg1V4JL+d7wEsvUBczlP9U9lwM+7mzQHxI4o1mhBsTmdOBbAb6fHU3Z3snN45w==}
+  '@biomejs/cli-darwin-x64@2.5.15':
+    resolution: {integrity: sha512-V5Kw63V+fVGNFhFrizDxMbGXAzZCh8kYzJpy3GI6gTapWDg7bZK9oYC9CbVgQSEdTnupz0U5Efz8Ev+5vdBBXw==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [darwin]
 
-  '@biomejs/cli-linux-arm64-musl@2.5.8':
-    resolution: {integrity: sha512-VcJNbstduTHx83NGAdhp78/JOcP45BZHXL7yNsfI1uGzdUgegAz2s+mSoT7wK6PBNzLoqG0zDOXaz/RQYVtSiw==}
+  '@biomejs/cli-linux-arm64-musl@2.5.15':
+    resolution: {integrity: sha512-tGzZUTcJCV7tj5Adh/Gn6nR4MycqA3iohq2LEcrarAgRBkU0h0OKd2UzCRkOsOYOuUGaUJb4YmqRqyy2feGGSw==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@biomejs/cli-linux-arm64@2.5.8':
-    resolution: {integrity: sha512-XmFiA0WPYFC+uiUDC8WRFzAIH9bo7vwQLav38Uoq4ETC+T/+uBi0TsYGJECkugY3r8USl3jc+Ae2/irAF6F2lQ==}
+  '@biomejs/cli-linux-arm64@2.5.15':
+    resolution: {integrity: sha512-XaG7P7eeSLYETD3K9grfB0mQmpLQZjygdbsxekWBJAg4am79fGAtRpfRyNnTvXB2fZFNnJZG3nXm7HBat0+VUw==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@biomejs/cli-linux-x64-musl@2.5.8':
-    resolution: {integrity: sha512-kKmiyokeISRGq2FLwvr+TzsgBusfxaZ0FZNLcOYOpCK/78tRrEjeEBLvq3xLZMpqbANgJdRPI7vZX8ZL37u9/w==}
+  '@biomejs/cli-linux-x64-musl@2.5.15':
+    resolution: {integrity: sha512-IlxUcyxilVGPsE008x13pWdkTbU3nQpP2i9b5UrbOYj6goBkKsRX1XB7yJLcV+O1H9LBchIIm4adOaVLZBX0ZQ==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@biomejs/cli-linux-x64@2.5.8':
-    resolution: {integrity: sha512-S5wcm9OBDvLHodD4PUaN488hCpco9QD/9ZxuYJiw4euWtr/oQvLR72z2ixItH8Wd5BCm6FZaeb+YNvOoM1xHtQ==}
+  '@biomejs/cli-linux-x64@2.5.15':
+    resolution: {integrity: sha512-xE4iEW/3LqlYj9GFgGrFsFSH51dEEpUbYWBfeOv0q87WkUDxK2o/HhreSb7qMJqck70RVM6Lg96hgedcAYcOkA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@biomejs/cli-win32-arm64@2.5.8':
-    resolution: {integrity: sha512-nILH0mzm3Hi3iEdd7o7GpB8kBR/mSQwfQG/tyBqyNrY2GFtcgwfV9nV8xLmbtUpMNY/Oi0Ml1XgfR4flOdq+AA==}
+  '@biomejs/cli-win32-arm64@2.5.15':
+    resolution: {integrity: sha512-2kPKzhNlm8C+Ru3GcO0Me2ODkCBLrVOUNuyi84RJyWDVKAA4+Kjj3jMjL938lF6BRfvltC4vB2nPY9SvN51Ovg==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [win32]
 
-  '@biomejs/cli-win32-x64@2.5.8':
-    resolution: {integrity: sha512-I2czzXTY61f3nFJxXoMDq80t7MivxDEnCjE+8sDKoFfcKMaoQdkqhIFQ3KyY0XLzeSpUBYeNAXgD+iOV/BU0VA==}
+  '@biomejs/cli-win32-x64@2.5.15':
+    resolution: {integrity: sha512-yAzh4UqEImV6Hcy0zjUqNfJAsUhoD64FBQCdTG8Md/Z2wQeVP/ZmJ3XRYAs1g8J9fjTFyl2fCtc5FB5til47+g==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
@@ -928,133 +928,157 @@ packages:
     resolution: {integrity: sha512-+oEBxK35kdbskhxozjZhI8N6qrMOfphpIkXnqBj6N2DC08rdkg10MUMRNKZLBNU6uNyoYiLcLyCE6aFV2sfMKw==}
     cpu: [arm64]
     os: [android]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-darwin-arm64@0.8.5':
     resolution: {integrity: sha512-+U2LBCJbQH24dFLAM0kmij/fOVHHWqWTMuaCavRKDE9rBz/a46tNsuYN87p+nFt5V4MECM7t5RSLCNkYzBmE+Q==}
     cpu: [arm64]
     os: [darwin]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-darwin-x64@0.8.5':
     resolution: {integrity: sha512-STctF8lSW+XhRvPupHktesqV0pk61SEZOwZTuDTZD/nPZsBsOPnD+X1hODioeoXMHn7bTkQKefOn4y6NyBOnoQ==}
     cpu: [x64]
     os: [darwin]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-freebsd-x64@0.8.5':
     resolution: {integrity: sha512-cQRu/g1LjMnso08GhiFQHrzLdczNiJ1IikpStJRC1RnKHGdZRGAWrfuJx1/j0Nwow0z9PrBf/rb3x85MRGSAQQ==}
     cpu: [x64]
     os: [freebsd]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-linux-arm-gnu@0.8.5':
     resolution: {integrity: sha512-069wu3iLZzw0vMC3p4SECvA0MVyglOw5jTeKL99yfC1k89qA6PvKJDn3Ty6Z/2D9Ci0lAIjRDdicNqVpNCFyfg==}
     cpu: [arm]
     os: [linux]
     libc: [glibc]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-linux-arm-musl@0.8.5':
     resolution: {integrity: sha512-g7GhzWR1EmK4BLZfVXJGzhpzNqgF8WhblU/oFZBvR+d747TmBslShqzdJAmaS1gJ1ydmQfyO94Zyias8pLUe5Q==}
     cpu: [arm]
     os: [linux]
     libc: [musl]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-linux-arm64-gnu@0.8.5':
     resolution: {integrity: sha512-moIvcAsAmgehTqvj3aBo97mAzx+4VGZudXsWvZTRfFs4qgg+iSdzrV8wMWURHslQkFDXKvt1DzMxGNZZxjz5yQ==}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-linux-arm64-musl@0.8.5':
     resolution: {integrity: sha512-w6sQZ5nlSYFPsz9FQ2a9oWxY/1cLi7C73qydLCqxYnB0EuDsrwZrKHw2FF/DXJr6qH7x2x+SmSFoVtaadLkhhg==}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-linux-x64-gnu@0.8.5':
     resolution: {integrity: sha512-R3bbB3RYuNu/aQcgCrwNRhKo/5zTLNyx+rklCzTrpESAbnZAwAU8cZqAe0CSXFDGQAPooWZDnmIGsq/L5aDUBQ==}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-linux-x64-musl@0.8.5':
     resolution: {integrity: sha512-E3tDaVRj9azS0GTzF2VpwkLLH1iqoadp2U1C2KDbUAtt1F4q5BBYzUv9/yI/4lmYzkrUSBG4e343tUwevm8u1w==}
     cpu: [x64]
     os: [linux]
     libc: [musl]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-win32-arm64@0.8.5':
     resolution: {integrity: sha512-zqy0Gu6StX8vN+J7i7J6HUjy6p+B+w7a3lLETlbmJLgphQTq3lKEt5zPAsNs/I5TU54xa3GaLobMM7EUqJvxZA==}
     cpu: [arm64]
     os: [win32]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-codegen/binding-win32-x64@0.8.5':
     resolution: {integrity: sha512-2ASUq/tP4sFD6xlB7Nuz/v3ofhPlt122r6RNFjPAnQdxZUqerOCX4rTJkyYqYcnyiSVazyuSVWKOiJItyJGX1w==}
     cpu: [x64]
     os: [win32]
+    deprecated: yuku-codegen is pure JavaScript since 0.14
 
   '@yuku-parser/binding-android-arm64@0.8.5':
     resolution: {integrity: sha512-BJtJvyf/Ma3v57uebPbe7VMUjNwTa3KW0fJn4awBBXyen8aS/i0gUbCDEsjGPY4GvAT41AggcYSep37V5VPENg==}
     cpu: [arm64]
     os: [android]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-darwin-arm64@0.8.5':
     resolution: {integrity: sha512-CEzkjuxNjufVmSRlSm1qYGaoRpbp0g03saC8Tz6BesbmBUuP8MSqJa2BSskMbvYkRhKUN4OFCoPJ0XJf7ARTZQ==}
     cpu: [arm64]
     os: [darwin]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-darwin-x64@0.8.5':
     resolution: {integrity: sha512-HS7wYfYUi3fTYNrzLNnZUia5DVo/Kf5NRmbh2rNVDKzMUEUfXI7xWdh0OOqIqYI3SsA5AcZOCI357uYb0+2B9Q==}
     cpu: [x64]
     os: [darwin]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-freebsd-x64@0.8.5':
     resolution: {integrity: sha512-Iq/XcdT3qjV+mxzb6hE4oSlst/+wrJxSsgKu3FkVkV1bxb0UfITfedws/wI356KVr+BM9CeamNkdbchHV4pJlw==}
     cpu: [x64]
     os: [freebsd]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-linux-arm-gnu@0.8.5':
     resolution: {integrity: sha512-vbI/zeUdJEZ8BKUEfOD8ngtPR5/9XdONpRRosw73kOtA1GyipTF1rj75ozLHIVCEybdCB/GSlQ6OjjhuEAKrGA==}
     cpu: [arm]
     os: [linux]
     libc: [glibc]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-linux-arm-musl@0.8.5':
     resolution: {integrity: sha512-3K4kOkOxWbUKoRja+vn7Srn8Nyc66Fr66oFWO+pFA/0KpVtlIGpKY+/KL8QIQdM7swTh+82OVkuFKeFEweVFLg==}
     cpu: [arm]
     os: [linux]
     libc: [musl]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-linux-arm64-gnu@0.8.5':
     resolution: {integrity: sha512-aj2pI9eT3ZAj8mWrC+utYUJwyxSd6ozthHjJfGtcY3MnZuQ4qbO7wm15BMqDgCSrg7az3tnONy1ftVQTWV9inA==}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-linux-arm64-musl@0.8.5':
     resolution: {integrity: sha512-+T2buVRNtY0QwhUeo8t47HmEpgh7tXMx8htMEdT7O0HHv3eFitwvyuVSdYNOpxo52Sc/0wJ6F4UbZni75aD4Pg==}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-linux-x64-gnu@0.8.5':
     resolution: {integrity: sha512-uIoy1uplNUqjq3GW6z+Ea8UCQkLKRPlM4FvqAhYMDwBazkVpE1mNvMqaQqf57ZP8mGTeOf4OF6CuUlenR2ttqg==}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-linux-x64-musl@0.8.5':
     resolution: {integrity: sha512-27doVJjvYevPWcakDCpfgZfDAlyhfyY3BwHf5TKtponCrSYBMzrBpD8ChYB1M7B6YOm0M5U9kEA0k1sB6CD4Ow==}
     cpu: [x64]
     os: [linux]
     libc: [musl]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-win32-arm64@0.8.5':
     resolution: {integrity: sha512-UIlSKhOLWZUQyDVQzYWAkHQGWnwNw5IxR/YYT2UCy64HLMQGGIxhb3qa/7Rf6yki50FrLx1O9PWgBKXCq7Zxxg==}
     cpu: [arm64]
     os: [win32]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-parser/binding-win32-x64@0.8.5':
     resolution: {integrity: sha512-helhS0Pt0TwsW9Z5L3V5o27qrnTrmaUTgSpymVUJYlZJgW6Nagk7nS5P3Ez4b1OZXMwc5y5CR6m1niuzL/yYfQ==}
     cpu: [x64]
     os: [win32]
+    deprecated: yuku-parser runs on yuku-core since 0.14
 
   '@yuku-toolchain/types@0.8.5':
     resolution: {integrity: sha512-ELNzrhwfi9+VCTaj6QcLCb5MlUK6pmVqPqH8bBmer1FTHvgEITnpwB73L/Wx5KKPPVWAokfeeU9V2rJy/9kMlg==}
@@ -2166,39 +2190,39 @@ snapshots:
 
   '@babel/helper-validator-identifier@7.29.7': {}
 
-  '@biomejs/biome@2.5.8':
+  '@biomejs/biome@2.5.15':
     optionalDependencies:
-      '@biomejs/cli-darwin-arm64': 2.5.8
-      '@biomejs/cli-darwin-x64': 2.5.8
-      '@biomejs/cli-linux-arm64': 2.5.8
-      '@biomejs/cli-linux-arm64-musl': 2.5.8
-      '@biomejs/cli-linux-x64': 2.5.8
-      '@biomejs/cli-linux-x64-musl': 2.5.8
-      '@biomejs/cli-win32-arm64': 2.5.8
-      '@biomejs/cli-win32-x64': 2.5.8
+      '@biomejs/cli-darwin-arm64': 2.5.15
+      '@biomejs/cli-darwin-x64': 2.5.15
+      '@biomejs/cli-linux-arm64': 2.5.15
+      '@biomejs/cli-linux-arm64-musl': 2.5.15
+      '@biomejs/cli-linux-x64': 2.5.15
+      '@biomejs/cli-linux-x64-musl': 2.5.15
+      '@biomejs/cli-win32-arm64': 2.5.15
+      '@biomejs/cli-win32-x64': 2.5.15
 
-  '@biomejs/cli-darwin-arm64@2.5.8':
+  '@biomejs/cli-darwin-arm64@2.5.15':
     optional: true
 
-  '@biomejs/cli-darwin-x64@2.5.8':
+  '@biomejs/cli-darwin-x64@2.5.15':
     optional: true
 
-  '@biomejs/cli-linux-arm64-musl@2.5.8':
+  '@biomejs/cli-linux-arm64-musl@2.5.15':
     optional: true
 
-  '@biomejs/cli-linux-arm64@2.5.8':
+  '@biomejs/cli-linux-arm64@2.5.15':
     optional: true
 
-  '@biomejs/cli-linux-x64-musl@2.5.8':
+  '@biomejs/cli-linux-x64-musl@2.5.15':
     optional: true
 
-  '@biomejs/cli-linux-x64@2.5.8':
+  '@biomejs/cli-linux-x64@2.5.15':
     optional: true
 
-  '@biomejs/cli-win32-arm64@2.5.8':
+  '@biomejs/cli-win32-arm64@2.5.15':
     optional: true
 
-  '@biomejs/cli-win32-x64@2.5.8':
+  '@biomejs/cli-win32-x64@2.5.15':
     optional: true
 
   '@changesets/apply-release-plan@8.0.0':
@@ -2708,9 +2732,9 @@ snapshots:
     dependencies:
       quansync: 1.0.0
 
-  '@repobuddy/biome@2.3.1(@biomejs/biome@2.5.8)':
+  '@repobuddy/biome@2.3.1(@biomejs/biome@2.5.15)':
     dependencies:
-      '@biomejs/biome': 2.5.8
+      '@biomejs/biome': 2.5.15
 
   '@rolldown/binding-android-arm64@1.2.4':
     optional: true
