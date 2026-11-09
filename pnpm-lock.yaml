@@ -195,7 +195,7 @@ importers:
     dependencies:
       '@modelcontextprotocol/sdk':
         specifier: ^1.30.0
-        version: 1.30.0(zod@4.4.3)
+        version: 1.32.0(zod@4.4.3)
       '@slack/web-api':
         specifier: ^7.10.0
         version: 7.19.0(debug@4.4.3)
@@ -638,8 +638,8 @@ packages:
     resolution: {integrity: sha512-6QEf6yqFbETdwGITKq57aYoPfX/3K8XFNwsAlx0C1M7o8cb79sv1M3w+tWuWvIcSbNqrLF7OD7YpZMVVz335hQ==}
     engines: {node: '>=20.0.0'}
 
-  '@modelcontextprotocol/sdk@1.30.0':
-    resolution: {integrity: sha512-xKd8OIzlqNzcqcNumGAa6g+PW2kjD5vrpcKOnfldAUPP3j7lnqMPwlTXQm8gF+UwH72z0lqaRbjr9hqGz0eITA==}
+  '@modelcontextprotocol/sdk@1.32.0':
+    resolution: {integrity: sha512-8BviX/hK4Gd2eL1KdTwm0gfl4d3wdoErW0Jd00h6nomUAtk6IJk5vwQJc6kfWtJTzN5OEV/lgIiJKI8fiDGAlA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@cfworker/json-schema': ^4.1.1
@@ -2759,7 +2759,7 @@ snapshots:
       tinyglobby: 0.2.17
       yaml: 2.9.0
 
-  '@modelcontextprotocol/sdk@1.30.0(zod@4.4.3)':
+  '@modelcontextprotocol/sdk@1.32.0(zod@4.4.3)':
     dependencies:
       '@hono/node-server': 2.1.0(hono@4.13.2)
       ajv: 8.20.0
@@ -4122,7 +4122,7 @@ snapshots:
   vite@8.2.1(@types/node@25.9.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.12)(yaml@2.9.0):
     dependencies:
       lightningcss: 1.33.0
-      picomatch: 4.0.5
+      picomatch: 4.0.7
       postcss: 8.5.26
       rolldown: 1.2.4
       tinyglobby: 0.2.17
